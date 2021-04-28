@@ -1,0 +1,10 @@
+//2.10
+
+下列变量的初值分别是什么？
+
+std::string global_str;  //空串
+int global_int;			 //初始化为0，函数体外部，内置类型未被显示初始化。
+int main(){
+	int local_int;		 //值未定义，函数体内部，内置类型变量不被初始化。
+	std::string local_str;//空串
+}
