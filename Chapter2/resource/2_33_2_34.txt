@@ -1,0 +1,18 @@
+利用本节定义的变量，判断下列语句的运行结果：
+
+a = 42;		//a是一个整数，结果是a赋值为42；
+b = 42;		//报错，b是一个整型常量不能赋值（错，b是一个整数，结果赋值为42）
+c = 42;		//（同理c也是一个整数，结果赋值为42）
+d = 42; 	//报错，d是int*
+e = 42; 	//报错，e是const int*
+g = 42;		//报错，g是const int
+
+
+int i = 0, &r = i;
+auto a = r;
+const int ci = i, &cr = ci;
+auto b = ci;（b是一个整数，ci的顶层const被忽略了）
+auto c = cr;（c是一个整数，忽略了ci的顶层const）
+auto d = &i;（d是一个整型指针）
+auto e = &ci;(e是一个指向整型常量的指针(对常量对象取地址是一种底层const))
+auto &g = ci;(g是一个整型常量引用)
