@@ -1,0 +1,5 @@
+指出每一个变量的类型和值
+
+int a = 3, b = 4;		//a,b是int型
+decltype(a) c = a;		//c是int型，
+decltype(a = b) d = a;  //d为int&型，d是a的引用  a的值3，b的值4，c的值3，d的值3.

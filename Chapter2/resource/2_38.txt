@@ -1,0 +1,7 @@
+decltype与auto的区别与联系
+
+int i = 2; auto j = i; decltype(i) j = i;   //auto 与 decltype 都是一样的类型int 
+
+auto会忽略顶层const，decltype不会
+
+eg: const int i = 2; auto j = i; decltype(i)j = i;    //auto的类型为int，decltype的类型为const int。
