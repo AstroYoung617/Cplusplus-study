@@ -1,0 +1,10 @@
+//3.12 下列vector对象的定义有不正确的吗？如果有，请指出来。对于正确的，描述其执行结果，对于不正确的，说明其错误原因
+
+a) vector<vector<int>> ivec;
+b) vector<string> svec = ivec;
+c) vector<string> svec(10, "null"); 
+
+解答：
+	a：正确，其结果为生成一个空的vector，名字为ivec 
+	b：错误，ivec 的类型为int，svec 的类型为string。
+	c：正确，svec 有10个元素全是null字符串。 
