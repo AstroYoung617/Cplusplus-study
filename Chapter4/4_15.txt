@@ -1,0 +1,9 @@
+下面的赋值是非法的，为什么？ 应该如何修改？
+double dval; int ival; int *pi;
+dval = ival = pi = 0;
+
+因为pi是int *类型，不能直接赋值给int类型的ival
+
+可以修改为：
+	double dval; int ival; int *pi;
+	dval = ival = *p = 0;
