@@ -5,6 +5,8 @@ int main() {
 	int* p = &val;
 	std::cout << p << std::endl;
 	std::cout << *p << std::endl;//解引用操作仅适用于那些确定指向了某个对象的指针
+									//补充，在一种情况例外，sizeof运算符中，并不要求指针有效也可以解引用。
+									//eg:sizeof(*p);
 	*p = 6;
 	std::cout << p << std::endl;
 	std::cout << val << std::endl;

@@ -9,8 +9,7 @@ https://www.cnblogs.com/guozqzzu/p/3597024.html
 https://blog.csdn.net/zhaojinjia/article/details/8770989
 
 int *p;
-//在块作用域内定义的指针如果没有初始化，将指向一个不确定的地址和指向的值。
-//在块作用域外定义的指针如果没有初始化，将被默认赋值为nullptr或0。
+//在块作用域外或内定义的指针如果没有初始化，将被默认赋值为nullptr或0。
 
 int d;
 //在块作用域内定义的基础类型如果没有初始化，将拥有一个不确定的值。
