@@ -1,0 +1,6 @@
+说明下面这条表达式的含义
+
+someValue ? ++x, ++y : --x, --y;
+
+解答：
+	其含义为：对someValue进行判断，如果为true执行x和y的递增，如果为false执行x和y的递减。
