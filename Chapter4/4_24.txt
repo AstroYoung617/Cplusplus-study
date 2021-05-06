@@ -1,0 +1,6 @@
+如果条件运算符满足的是左结合律，怎么解释如下语句
+finalgrade = (grade > 90) ? "high pass" : (grade < 60) ? "fail" : "pass";
+
+相当于：
+	finalgrade = ((grade > 90) ? "high pass" : (grade < 60)) ? "fail" : "pass";
+	如果分数小于90则结果为一个bool值。
