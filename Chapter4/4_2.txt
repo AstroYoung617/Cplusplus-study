@@ -1,0 +1,6 @@
+在下述表达式中的合理位置添加括号，使得添加括号后运算对象的组合顺序与添加括号前一致。
+
+a) *vec.begin();				//*(vec.begin())
+b) *vec.begin() + 1;			//(*vec.begin() + 1)
+
+vec.begin() vec.end() 相当于   指针
