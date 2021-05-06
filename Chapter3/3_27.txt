@@ -1,0 +1,9 @@
+//3.27
+假设txt_size是一个无参数的函数，他的返回值是int。请回答下列那个定义是非法的？为什么？
+
+unsigned buf_size = 1024;
+
+a) int ia[buf_size];				//非法，数组的维度只能是常量表达式 
+b) int ia[4 * 7 - 14];				//合法 
+c) int ia[txt_size];				//当且仅当txt_size是常量表达式时合法 
+d) char st[11] = "fundamental"; 	//非法，字符串长度超出维度，因为还有一个空字符 
