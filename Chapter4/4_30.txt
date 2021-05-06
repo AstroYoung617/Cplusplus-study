@@ -1,0 +1,6 @@
+加上括号后表达式的含义与原来的含义相同
+
+a) sizeof x + y;					 //(sizeof x) + y
+b) sizeof p -> mem[i];				 //sizeof(p->mem[i]);
+c) sizeof a < b;					 //(sizeof a) < b
+d) sizeof f();						 //sizeof (f())
