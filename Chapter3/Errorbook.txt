@@ -1,0 +1,8 @@
+//3.22
+//3.41
+
+.\3_44-2.cpp(3): error C2178: 不能使用“constexpr”说明符声明“abstract declarator”
+.\3_44-2.cpp(3): error C2178: 不能使用“constexpr”说明符声明“int_arr”
+.\3_44-2.cpp(3): error C2737: “int_arr”: 必须初始化“constexpr”对象
+
+using int_arr = constexpr size_t;错误

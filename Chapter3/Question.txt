@@ -1,0 +1,2 @@
+1.为什么include了string还要使用using std::string？
+2.attention:数组之间不能拷贝或者赋值
