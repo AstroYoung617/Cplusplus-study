@@ -1,0 +1,8 @@
+写出一条表达式用于确定一个整数是奇数还是偶数
+
+int i;
+cin >> i;
+if(i % 2)
+	cout << "奇数" << endl;
+else
+	cout << "偶数" << endl;
