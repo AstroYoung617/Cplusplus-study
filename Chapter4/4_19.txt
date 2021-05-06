@@ -1,0 +1,10 @@
+表达式的含义，是否正确？怎么修改？
+
+int *ptr;
+int ival;
+vector<int> vec
+
+a)ptr != 0 && *ptr++;			//如果不是一个空指针，再判断其指向的值是否为空，最后将指针ptr向前移动一个位置
+b)ival++ && ival;				//整数ival是否为0，如果不为0，对其加1后再判断是否为0
+c)vec[ival++] <= vec[ival]		//错误，<=运算符没有规定运算顺序。
+								//vec[ival+1] <= vec[ival];
