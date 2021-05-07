@@ -1,0 +1,11 @@
+说明下列例子的含义，如果存在问题，试着修改它。
+
+a) while (string::iterator iter != s.end()){...}		//利用循环进行迭代器的迭代，直到s的尾后。没有控制迭代器的增长，会死循环。
+														//修改： while (string::iterator iter != s.end()){++iter;}
+
+b) while (bool status = find(word)) {...}				//find(word)返回一个非0值执行循环体内的操作，但是status是在while结构
+	if (!status){...}									体中定义的，所以if不能够使用，会报错。
+														//修改： bool status = find(word);
+																while (status){...}
+																if(!status){...}
+	
