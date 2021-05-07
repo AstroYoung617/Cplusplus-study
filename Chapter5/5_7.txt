@@ -1,0 +1,17 @@
+改正下列代码段中的错误。
+
+a)if (ival1 != ival2)
+	ival1 = ival2									//没有加上分号
+  else ival1 = ival2 = 0;
+
+b)if (ival < minval)								//复合语句需要加上花括号
+	minval = ival;
+	occurs = 1;
+
+c)if (int ival = get_value())						//ival是在上一个if语句中定义的，第二个if不能使用
+	cout << "ival = " << ival << endl;
+  if (!ival)
+	cout << "ival = 0\n";
+
+d)if (ival = 0)										//ival赋值为0则下面的语句不会执行，应该用“==”
+	ival = get_value();
