@@ -1,0 +1,5 @@
+说明下面这条语句的含义
+
+double slope = static_cast<double>(j/i);
+
+将j与i的计算结果转换为double类型赋值给slope。

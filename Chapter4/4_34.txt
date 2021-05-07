@@ -1,0 +1,5 @@
+下面的表达式中将发生什么样的类型转换
+
+a) if (fval)				//	fval在条件表达式中将被转换为bool类型
+b) dval = fval + ival		//	ival转换为float型与fval相加，最后转换为double型
+c) dval + ival * cval		//	cval提升为int型与ival相乘，结果转换为double型。
