@@ -1,0 +1,59 @@
+//下面显示的每个程序都含有一个常见的编程错误，指出错误在哪里，然后修改他们。
+
+(a)unsigned aCnt = 0, eCnt = 0, iouCnt = 0;
+char ch = next_text();
+switch (ch)
+{
+case 'a':aCnt++;
+case 'e':eCnt++;
+default: iouCnt++;
+}
+
+解答：没有写break;
+
+(b)unsigned index = some_value();
+switch (index)
+{
+case 1:
+int ix = get_value();
+ivec [ix] = index;
+break;
+default:
+ix = ivec.size()-1;
+ivec [ix] = index;
+}
+
+解答：case1中有变量的初始化。
+
+（c）unsigned evenCnt = 0, oddCnt = 0;
+int digit = get_num() % 10;
+switch (digit)
+{
+case1,3,5,7,9:
+oddcnt++;
+break;
+case2, 4, 6 ,8,10:
+evencnt++;
+break;      
+}
+
+解答：不能用“，”来表示case 1 ，case 2.
+
+（d）unsigned ival = 512, jval = 1024, kval = 4096;
+unsigned bufsize;
+unsigned swt = get_bufCnt();
+switch(swt)
+{
+case ival:
+bufsize = ival *sizeof(int);
+break;
+case jval:
+bufsize = jval*sizeof(int);
+break;
+case kval:
+bufsize = kval*sizeof(int);
+break;
+}
+
+
+解答：case后面要加常量，不能是变量。
