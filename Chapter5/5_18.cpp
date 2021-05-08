@@ -1,13 +1,13 @@
 说明下列循环的含义并改正其中的错误。
 
-(a) do { 
+(a) do /*{*/
     int v1, v2;
     cout << "Please enter two numbers to sum:";
     if (cin >> v1 >> v2)
         cout << "Sum is: " << v1 + v2 << endl;
-} while (cin);
-//输入两个数，输出他们的和。
-//while中应该写cin >> v1 >> v2
+/*}*/ while (cin);
+
+//加上花括号
 
 (b) int ival;
 do {

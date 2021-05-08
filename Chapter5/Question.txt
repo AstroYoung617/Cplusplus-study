@@ -1,0 +1,9 @@
+语句while(cin>>str)，str是个string类型，在一行中输入几个string，末位加个ctrl+z,输入没有结束，除非输入换行后，再输入ctrl+z才能跳出输入。
+
+cin >> noskipws >> ch
+
+cin.get(ch) // ch = cin.get()
+
+或者是直接书写cin.get()
+注意，在 IDE 中运行程序时，当程序终止，则输出窗口会关闭，而 cin.get 函数可用于保持输出屏幕可见。
+

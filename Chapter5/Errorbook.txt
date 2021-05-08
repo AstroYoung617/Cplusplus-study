@@ -1,0 +1,17 @@
+//5.18
+
+
+(a) do { 
+    int v1, v2;
+    cout << "Please enter two numbers to sum:";
+    if (cin >> v1 >> v2)
+        cout << "Sum is: " << v1 + v2 << endl;
+} while (cin);
+//输入两个数，输出他们的和。
+//while中应该写cin >> v1 >> v2 （错）
+
+只能用在do while 中，如果在while循环中使用的话，会陷入死循环。
+
+    单独的一个cin也可以作为条件判断是否有输入。
+
+使用一个istream的对象作为条件时，效果是检查流的状态。若流有效，则检测成功，返回true。当遇到文件结束符或者无效的输入（比如用一个字符来作为一个整型数的输入时），istream的对象状态会变为无效。

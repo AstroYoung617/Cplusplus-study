@@ -13,7 +13,8 @@ int main() {
 	char ch_before = '\0';
 	vector<int> vec(8, 0);
 
-	while (cin >> noskipws >> ch) {
+	//while (cin >> noskipws >> ch) {
+	while (cin.get(ch)) {
 		if (isupper(ch)) 
 			ch = tolower(ch);
 		switch (ch) {
