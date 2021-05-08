@@ -1,6 +1,7 @@
 #include <iostream>
+#include "Chapter6.h"
 using std::cin; using std::cout; using std::endl;
-int fact(int);			//如果函数定义在主函数的后面则一定要有函数声明，声明方式和C语言如出一辙。
+//int fact(int);			//如果函数定义在主函数的后面则一定要有函数声明，声明方式和C语言如出一辙。
 						//为了保险起见，我认为都应该加上函数声明。
 int fact(int val) {
 	int ret = 1;
