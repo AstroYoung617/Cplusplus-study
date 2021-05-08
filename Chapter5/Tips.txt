@@ -1,1 +1,5 @@
 1. switch语句不是非得在最后一个标签后面写上break，但是为了安全起见，最好这么做。
+
+2. 只有当switch语句嵌套在迭代语句内部时，才能在switch里使用continue。
+
+3.do while condition中使用的变量必须定义在循环体之外。
